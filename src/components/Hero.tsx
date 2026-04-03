@@ -38,28 +38,33 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-12 leading-relaxed"
         >
-          AnyWeb designs websites, builds Shopify stores, connects systems, and uses automation and AI to eliminate repetitive work and scale your business.
+          AnyWeb designs websites, builds Shopify stores, connects systems, and uses automation and AI to eliminate repetitive work and scale your business — from simple websites to advanced, fully integrated platforms powered by automation and AI.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6"
+          className="flex flex-col items-center gap-6"
         >
-          <Link
-            to="/contact"
-            className="w-full sm:w-auto px-10 py-5 rounded-2xl gradient-bg text-white font-bold text-lg shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 hover:scale-105 transition-all flex items-center justify-center gap-2"
-          >
-            Get a Quote
-            <ChevronRight className="w-5 h-5" />
-          </Link>
-          <Link
-            to="#services"
-            className="w-full sm:w-auto px-10 py-5 rounded-2xl glass text-slate-900 font-bold text-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-2 shadow-sm"
-          >
-            View Services
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full">
+            <Link
+              to="/contact"
+              className="w-full sm:w-auto px-10 py-5 rounded-2xl gradient-bg text-white font-bold text-lg shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 hover:scale-105 transition-all flex items-center justify-center gap-2"
+            >
+              Get a Quote
+              <ChevronRight className="w-5 h-5" />
+            </Link>
+            <Link
+              to="/contact"
+              className="w-full sm:w-auto px-10 py-5 rounded-2xl glass text-slate-900 font-bold text-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-2 shadow-sm"
+            >
+              Get Free Demo
+            </Link>
+          </div>
+          <p className="text-sm font-bold text-slate-400 uppercase tracking-widest">
+            Free consultation + free website demo available
+          </p>
         </motion.div>
 
         {/* Floating UI Elements Mockup */}

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Zap } from 'lucide-react';
 import { SERVICES } from '../constants';
 
 export default function Footer() {
@@ -10,11 +10,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
         {/* Brand */}
         <div className="space-y-6">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center text-white font-bold text-lg">
-              A
+          <Link to="/" className="flex items-center gap-2 group">
+            <div className="w-8 h-8 rounded-lg gradient-bg flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+              <Zap className="w-5 h-5 fill-current" />
             </div>
-            <span className="text-xl font-display font-bold tracking-tighter text-slate-900">
+            <span className="text-xl font-display font-extrabold tracking-tighter text-slate-900">
               Any<span className="gradient-text">Web</span>
             </span>
           </Link>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronRight } from 'lucide-react';
+import { Menu, X, ChevronRight, Zap } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '../lib/utils';
 import { SERVICES } from '../constants';
@@ -37,9 +37,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-10 h-10 rounded-xl gradient-bg flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
-            A
+            <Zap className="w-6 h-6 fill-current" />
           </div>
-          <span className="text-2xl font-display font-bold tracking-tighter text-slate-900">
+          <span className="text-2xl font-display font-extrabold tracking-tighter text-slate-900">
             Any<span className="gradient-text">Web</span>
           </span>
         </Link>
